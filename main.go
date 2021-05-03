@@ -2,13 +2,14 @@ package main
 
 import (
 	"fmt"
+	"math/rand"
+	"time"
+
 	"github.com/petrjahoda/database"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 	"gorm.io/gorm/clause"
 	"gorm.io/gorm/logger"
-	"math/rand"
-	"time"
 )
 
 const version = "2021.1.3.30"
@@ -17,7 +18,7 @@ const config = "user=postgres password=pj79.. dbname=system host=localhost port=
 
 func main() {
 	end := time.Now().AddDate(0, 0, -1)
-	beginning := end.AddDate(0, -3, 0)
+	beginning := end.AddDate(0, -12, 0)
 
 	fmt.Println(beginning)
 	fmt.Println(end)
@@ -85,5 +86,4 @@ func main() {
 		}
 		fmt.Println(device.Name + " finished in " + time.Since(timer).String())
 	}
-
 }
