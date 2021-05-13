@@ -13,10 +13,10 @@ require (
 	github.com/jackc/pgx/v4 v4.11.0 // indirect
 	github.com/jinzhu/inflection v1.0.0 // indirect
 	github.com/jinzhu/now v1.1.2 // indirect
-	github.com/petrjahoda/database v0.0.0-20210503075300-4065c9b2e89c
-	golang.org/x/crypto v0.0.0-20210421170649-83a5a9bb288b // indirect
+	github.com/petrjahoda/database v0.0.0-20210513073534-5ea21c3f0575
+	golang.org/x/crypto v0.0.0-20210506145944-38f3c27a63bf // indirect
 	golang.org/x/text v0.3.6 // indirect
 	golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1 // indirect
-	gorm.io/driver/postgres v1.0.8
+	gorm.io/driver/postgres v1.1.0
 	gorm.io/gorm v1.21.9
 )
